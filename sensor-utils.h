@@ -1,15 +1,5 @@
 #pragma once
 
-// Pin assignments for a 4-wire LED for status indication
-// #define RED_LED A1 //
-// #define GREEN_LED A2
-// #define BLUE_LED A3
-
-// #define OFF (0)
-// #define RED (1)
-// #define BLUE (2)
-// #define GREEN (3)
-
 namespace utils
 {
 void printBanner(const char *firmware_name,
@@ -46,33 +36,4 @@ void printBanner(const char *firmware_name,
     Serial.println();
 }
 
-// void setLedColour(int colour)
-// {
-//     switch (colour)
-//     {
-//     case RED:
-//         digitalWrite(RED_LED, HIGH);
-//         digitalWrite(GREEN_LED, LOW);
-//         digitalWrite(BLUE_LED, LOW);
-//         break;
-
-//     case BLUE:
-//         digitalWrite(RED_LED, LOW);
-//         digitalWrite(GREEN_LED, LOW);
-//         digitalWrite(BLUE_LED, HIGH);
-//         break;
-
-//     case GREEN:
-//         digitalWrite(RED_LED, LOW);
-//         digitalWrite(GREEN_LED, HIGH);
-//         digitalWrite(BLUE_LED, LOW);
-//         break;
-
-//     case OFF:
-//         digitalWrite(RED_LED, LOW);
-//         digitalWrite(GREEN_LED, LOW);
-//         digitalWrite(BLUE_LED, LOW);
-//         break;
-//     }
-// }
 }
